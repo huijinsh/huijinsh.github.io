@@ -1,0 +1,95 @@
+{% extends "base.html" %}
+
+{% block content %}
+<script type="text/javascript">
+    document.getElementById("nav-aboutus-title").classList.add('nav-title-selected');
+    document.getElementById("nav-aboutus").classList.add('nav-selected');
+</script>
+
+<div class="jumbotron" style="background-color:lightblue">
+    <div class="container">
+        <h1>MathCup Academy</h1>
+        <h3>About Us </h3>
+    </div>
+</div>
+
+<style>
+    /* Add some basic styling for better presentation */
+    .profile-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .profile-img {
+        width: 110px;
+        /* Adjust as needed */
+        height: 100px;
+        /* Adjust as needed */
+        border-radius: 80%;
+        /* to make it round */
+        margin-right: 20px;
+        /* for spacing between image and text */
+    }
+</style>
+
+<div class="container">
+    <div class="row col-md-10">
+        At MathCup Academy Inc., we are a group of math enthusiasts and parents. As math enthusiasts,
+        we love problem solving. Even though professionally we are working in different industries, we enjoy solving
+        excellent and challenging high school
+        and college level mathematics competition problems. As parents, we are concerned by the level of
+        mathematics learning in most of the elementary and middle schools. A lot of students feel un-challenged in
+        schools'
+        curriculum, and consequently, they find mathematics boring. This is certainly disconnected from
+        the demand of the real world, where problem solving skills are becoming increasingly critical.
+
+    </div>
+
+    <div class="row col-md-10">
+        <br />
+    </div>
+
+    <div class="row col-md-10">
+        We want to make math problem solving fun and cool, and give students the opportunity for excellence.
+
+    </div>
+
+    <div class="row col-md-10">
+        <h3> <b>Founders</b> </h3>
+    </div>
+
+    <div class="row col-md-10">
+        <div class="profile-container">
+            <img class="profile-img" src="static/avatars/HuiProfile.jpg" alt="Profile Picture">
+            <p><b>Hui Jin</b>&nbsp;&nbsp; Dr. Jin was a two times Chinese math olympiad (CMO) qualifier, and a one time
+                CMO
+                winner. He was
+                a member of the 1993 Chinese math olympiad program (USA MOP counterpart in China). He ranked top 20
+                nationwide
+                in the Putnam college math competition and was top 5 nationwide Caltech-team member. He holds a B.S.,
+                M.S., and
+                a Ph.D. in electrical engineering from Caltech.
+                <br>
+            </p>
+        </div>
+        <br>
+    </div>
+
+    <div class="row col-md-10">
+        <div class="profile-container">
+            <img class="profile-img" src="static/avatars/DiProfile.JPG" alt="Profile Picture">
+            <p><b>Di Xu</b>&nbsp;&nbsp; Dr. Xu serves as the Head of AI Labs and AI Governance at American Express,
+                where he
+                brings over two decades of expertise in leveraging data science to enhance decision-making processes
+                within the
+                consumer financial sector. His professional interests extend beyond finance, encompassing the
+                application of
+                data science and machine learning across various fields including education, mathematical problem
+                solving, and
+                music creation. Di holds a Doctorate in Industrial Engineering, a Master’s degree in Statistics, and a
+                Bachelor’s degree in Control Theory.
+            </p>
+        </div>
+
+    </div>
+    {% endblock %}
